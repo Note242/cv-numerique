@@ -1,0 +1,552 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+
+@font-face {
+    font-family: "BungeeShade-Regular";
+    src: url('/font/BungeeShade-Regular.ttf');
+}
+
+body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background:url(../image/tropical-neon.jpg) no-repeat center fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 1%;
+    
+}
+.logo {
+    width: 50%;
+    height: 80px;
+  
+}
+.liste {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+.liste1{
+    display: none;
+    width: 50%;
+    justify-content: space-around;
+
+}
+
+
+h1 {
+    position: relative;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "BungeeShade-Regular";
+    border-bottom: 2px solid white;
+    width: 90px;
+}
+
+/************************* ANIMATION MENU NAV *********************/
+
+p {
+    font-size: 18px;
+}
+
+nav,
+ul {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    list-style: none;
+    justify-content: end;
+    padding: 5px;
+    gap: 6px;
+
+
+}
+
+.nom {
+    width: 100%;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+nav ul {
+    padding: 5px;
+    display: flex;
+}
+
+ul li {
+    margin-right: 16px;
+}
+
+ul li a {
+    position: relative;
+    padding: 7px 0px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+ul li a::after {
+    content: "";
+    background: purple;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 3px;
+    transform: translate(-50%, -6x);
+    transition: 0.4s;
+}
+
+ul li a:hover::after {
+    width: 50%;
+}
+
+.liste {
+    width: 50%;
+}
+
+nav {
+   
+    background-color:  rgba(0, 0, 0, 0.823);
+    border-bottom: 4px double white;
+    right: 0px;
+    top: 0px;
+    position: absolute;
+    position: fixed;
+    padding: 20px ;
+    width: 100%;
+   
+    align-content: space-around;
+    
+}
+
+/**Main**/
+
+
+/************************* ACCUEIL **********************/
+
+.accueil {
+    width: 100%;
+    display: flex;
+    margin-top: 80px;
+    padding: 5%;
+}
+
+.accueil .paragraphe {
+    margin-left: 10px;
+    display: flex;
+    
+    font-family: "BungeeShade-Regular";
+    font-size: 2em;
+    text-align: center;
+    color: rgb(232, 88, 232);
+}
+
+.accueil h2 {
+    display: flex;
+    font-family: "BungeeShade-Regular";
+    font-size: 5em;
+
+}
+
+.gauche {
+    width: 50%;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.droite {
+    width: 50%;
+    height: 100px;
+}
+
+.droiteimg {
+    width: 50%;
+    height: 100px;
+    margin-top: -20%;
+}
+.droite img{
+    height: 600px;
+    margin-top: -150px;
+}
+/* .droite1{
+    width: 50%;
+ display: none;
+}
+
+.droite1 img {
+    width: 100%;
+    margin-top: auto;
+} */
+
+.accueil .i{
+    display: flex;
+    align-content: space-around;
+    margin-top: 40px;
+    gap: 50px;
+}
+
+.icone1 a{
+    font-size: 50px;
+}
+.icone1{
+    display: flex;
+    margin-top: 50px;
+    gap: 20%;
+}
+
+/*********************** QUI SUIS-JE ? ***********************/
+
+
+.page2 {
+    margin-top: 90px;
+    width: 100%;
+}
+.contenue2 {
+    background-color: rgba(0, 0, 0, 0.444);
+    display: flex;
+    margin-top: 70px;
+}
+.container0{
+    display: flex;
+}
+h3 {
+
+    text-align: center;
+    font-family: "BungeeShade-Regular";
+    font-size: 50px;
+ }
+
+.container0 .imagegauche {
+    width: 50%;
+    height: 500px;
+    display: flex;
+    
+}
+
+.qui {
+    width: 50%;
+    margin-top: 63px;
+    line-height: 35px;
+
+}
+
+
+
+/***************************** MES COMPÉTENCES  *******************/
+
+.page3{
+    margin-top: 90px;
+    width: 100%;
+}
+h3 {
+
+    text-align: center;
+     font-family: "BungeeShade-Regular";
+     font-size: 50px;
+ }
+ .contenue3{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.444);
+    margin-top: 70px;
+ }
+ .container1{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    width: 50%;
+    justify-content: center;
+    padding-bottom: 50px;
+ }
+ .imagedroite{
+    width: 50%;
+    height: 600px;
+    display: flex;
+    width: 50%;
+ }
+.groupe1{
+display: flex;
+
+}
+.groupe2{
+    display: flex;
+}
+.co{
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+
+}
+.contenue3 .imagedroite{
+    width: 50%;
+    height: 500px;
+    display: flex;
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+/********************  MES OUTILS **********************/
+
+.page4{
+    margin-top: 90px;
+    width: 100%;
+}
+h3 {
+    text-align: center;
+     font-family: "BungeeShade-Regular";
+     font-size: 50px;
+ }
+ .contenue4{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.444);
+    margin-top: 70px;
+ }
+ .container2{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    width: 50%;
+    justify-content: center;
+    padding-bottom: 50px;
+ }
+ .imagedroite{
+    width: 50%;
+    height: 600px;
+    display: flex;
+    width: 50%;
+ }
+.icone{
+    font-size: 100px;
+    display: table;
+    margin: 60px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.groupe3{
+display: flex;
+
+}
+.groupe4{
+    display: flex;
+}
+
+/******************** PROJETS **********************/
+.page5{
+    margin-top: 90px;
+    margin-bottom: 5%;
+    width: 100%;
+}
+ .contenue5{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    background-color: rgba(0, 0, 0, 0.444);
+    margin-top: 70px;
+    width: 100%;
+ }
+ .container3{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+ }
+.contenue5 img{
+    height: 300px;
+}
+.projet1{
+    width: 33,33%;
+}
+.projet2{
+    width: 33,33%;
+}
+.projet3{
+    width: 33,33%;
+}
+
+
+/********************  FOOTER **********************/
+.footer{
+    position: absolute;
+    right: 0px;
+    background-color: blueviolet;
+    bottom: 0px;
+    padding: 20px 0;
+    height: 20px;
+    width: 100%;
+    align-items: center;
+    align-content: space-around;
+}
+div.footer{
+    display: flex;
+    justify-content: space-around;}
+.footer h4{
+    font-size: 1em;
+   width: 33,33;
+}
+.footer h5{
+    font-size: 1em;
+   width: 33,33;
+   
+}
+.icone2{
+  
+    width: 33,33;
+  }
+.icone2 a{
+    font-size: 20px;
+}
+
+
+/********************  MEDIA QUERY **********************/
+
+@media screen and ( max-width: 960px ){
+    .droite img {
+        display: none;
+    }
+    .droite1{
+        width: 100%;
+     display: block;
+    }
+    
+    .droite1 img {
+        width: 100%;
+        height: 100%;
+        margin-top: -10px;
+    }
+
+    .container3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40p;
+    }
+}
+
+
+
+
+
+
+
+@media screen and ( max-width: 1050px ){
+.liste{
+    display: none;
+}
+div.logo{
+   width: 100%;
+}
+}
+
+
+
+@media screen and ( max-width: 1050px ){
+    .page2{
+       
+        width: 100%;
+    }
+    .contenue2{
+        display: flex ;
+        flex-direction: column; 
+        width: 100%;
+    }
+    .container0{
+    justify-content: center;
+    width: 100%;
+    }
+    .imagegauche{
+        justify-content: center;
+    width: 100%;
+    }
+    img{
+        height: 500px;
+    }
+    .container0{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .qui{
+
+    width: 100%;
+    }
+    }
+
+
+
+
+@media screen and ( max-width: 1050px ){
+.page3{
+   
+    width: 100%;
+}
+.contenue3{
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+}
+.container1{
+justify-content: center;
+width: 100%;
+}
+.imagedroite{
+    justify-content: center;
+width: 100%;
+}
+img{
+    height: 600px;
+}
+.container0{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+.page4{
+    width: 100%;
+}
+.contenue4{
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+}
+.container2{
+justify-content: center;
+width: 100%;
+}
+.imagedroite{
+    justify-content: center;
+    width: 100%;
+}
+
+.liste1{
+    display: block;
+}
+ul li a {
+    position: relative;
+    padding: 7px 0px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+
+
+}
+nav ul {
+    padding: 5px;
+    display: flex;
+    width: 100%;
+}
+
+}
