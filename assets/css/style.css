@@ -22,14 +22,14 @@ body {
     padding: 1%;
     
 }
-.logo {
-    width: 50%;
+div.logo {
+    width: 10%;
     height: 80px;
   
 }
 .liste {
     display: flex;
-    width: 50%;
+    width: 90%;
     justify-content: space-around;
 }
 .liste1{
@@ -222,12 +222,12 @@ h3 {
 
     text-align: center;
     font-family: "BungeeShade-Regular";
-    font-size: 50px;
+    
  }
 
-.container0 .imagegauche {
-    width: 50%;
-    height: 500px;
+.imagegauche img{
+    width: 100%;
+    height: 600px;
     display: flex;
     
 }
@@ -248,10 +248,9 @@ h3 {
     width: 100%;
 }
 h3 {
-
     text-align: center;
      font-family: "BungeeShade-Regular";
-     font-size: 50px;
+    
  }
  .contenue3{
     display: flex;
@@ -266,11 +265,10 @@ h3 {
     justify-content: center;
     padding-bottom: 50px;
  }
- .imagedroite{
+ .imagedroite img{
     width: 50%;
-    height: 600px;
     display: flex;
-    width: 50%;
+    
  }
 .groupe1{
 display: flex;
@@ -286,28 +284,35 @@ display: flex;
 
 }
 .contenue3 .imagedroite{
-    width: 50%;
-    height: 500px;
-    display: flex;
     width: 100%;
-    align-content: center;
-    align-items: center;
     justify-content: center;
-    text-align: center;
+    
+}
+@media screen and ( max-width: 530px ){
+    .groupe1{
+        display: flex;
+        flex-direction: column;
+        
+        }
+
+
 }
 /********************  MES OUTILS **********************/
 
 .page4{
     margin-top: 90px;
-    width: 100%;
+    width: 100vw;
+    
 }
 h3 {
     text-align: center;
      font-family: "BungeeShade-Regular";
-     font-size: 50px;
+     
  }
  .contenue4{
     display: flex;
+    width: 100%;
+    justify-content: center;
     background-color: rgba(0, 0, 0, 0.444);
     margin-top: 70px;
  }
@@ -315,15 +320,14 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     margin-top: 70px;
-    width: 50%;
+    width: 100%;
     justify-content: center;
     padding-bottom: 50px;
  }
- .imagedroite{
-    width: 50%;
-    height: 600px;
-    display: flex;
-    width: 50%;
+ .imagedroite img{
+    width: 100%;
+    justify-content: center;
+  
  }
 .icone{
     font-size: 100px;
@@ -408,21 +412,20 @@ div.footer{
 
 /********************  MEDIA QUERY **********************/
 
+
+/*ACCEUIL*/
 @media screen and ( max-width: 960px ){
+
+    div.droite{
+        display: none;
+    }
     .droite img {
         display: none;
     }
-    .droite1{
-        width: 100%;
-     display: block;
-    }
-    
-    .droite1 img {
-        width: 100%;
-        height: 100%;
-        margin-top: -10px;
-    }
-
+.gauche{
+    width: 100%;
+    justify-content: center;
+}
     .container3{
         display: flex;
         flex-direction: column;
@@ -430,13 +433,6 @@ div.footer{
         gap: 40p;
     }
 }
-
-
-
-
-
-
-
 @media screen and ( max-width: 1050px ){
 .liste{
     display: none;
@@ -466,9 +462,7 @@ div.logo{
         justify-content: center;
     width: 100%;
     }
-    img{
-        height: 500px;
-    }
+   
     .container0{
         display: flex;
         flex-direction: column;
@@ -501,9 +495,9 @@ width: 100%;
     justify-content: center;
 width: 100%;
 }
-img{
+/*img{
     height: 600px;
-}
+}*/
 .container0{
     display: flex;
     flex-direction: column;
