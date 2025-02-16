@@ -187,6 +187,8 @@ nav {
 }
 .icone1{
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 50px;
     gap: 20%;
 }
@@ -271,7 +273,6 @@ display: flex;
 @media screen and ( max-width: 530px ){
     .groupe1{
         display: flex;
-        flex-direction: column;
         
         }
 
@@ -304,12 +305,22 @@ h3 {
     justify-content: center;
     padding-bottom: 50px;
  }
- .imagedroite img{
-    width: 100%;
+ .imagedroite{
+   display: flex;
     height: 50vw;
-
     justify-content: center;
-  
+ }
+.icones{
+    font-size: 10vw;
+    display: table;
+    margin: 60px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+ .imagedroite img{
+    height: 50vw;
+    justify-content: center;
  }
 .icone{
     font-size: 10vw;
@@ -350,6 +361,7 @@ display: flex;
     grid-template-columns: repeat(4, 1fr); /* Crée 4 colonnes égales par défaut */
     gap: 20px; /* Espacement entre les cards */
     margin: 20px;
+    margin-bottom: 70px;
 }
 
 /* Styles pour chaque card */
@@ -490,7 +502,10 @@ div.footer{
         display: none;
     }
 .gauche{
-    width: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
     justify-content: center;
 }
     .container3{
