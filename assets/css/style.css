@@ -24,7 +24,7 @@ body {
 }
 div.logo {
     width: 100%;
-    height: 80px;
+   
   
 }
 .liste {
@@ -158,7 +158,7 @@ nav {
 }
 
 .gauche {
-    width: 50%;
+    width: 100%;
     justify-content: center;
     margin-top: 70px;
 }
@@ -168,24 +168,12 @@ nav {
     height: 100px;
 }
 
-.droiteimg {
-    width: 50%;
-    height: 100px;
-    margin-top: -20%;
-}
+
 .droite img{
     height: 600px;
     margin-top: -150px;
 }
-/* .droite1{
-    width: 50%;
- display: none;
-}
 
-.droite1 img {
-    width: 100%;
-    margin-top: auto;
-} */
 
 .accueil .i{
     display: flex;
@@ -207,7 +195,7 @@ nav {
 
 
 .page2 {
-    margin-top: 90px;
+    margin-top: 100px;
     width: 100%;
 }
 .contenue2 {
@@ -217,6 +205,7 @@ nav {
 }
 .container0{
     display: flex;
+    justify-content: center;
 }
 h3 {
 
@@ -227,9 +216,7 @@ h3 {
 
 .imagegauche img{
     width: 100%;
-    height: 600px;
-    display: flex;
-    
+    height: 50vw;
 }
 
 .qui {
@@ -244,7 +231,7 @@ h3 {
 /***************************** MES COMPÉTENCES  *******************/
 
 .page3{
-    margin-top: 90px;
+    margin-top: 100px;
     width: 100%;
 }
 h3 {
@@ -257,6 +244,7 @@ h3 {
     background-color: rgba(0, 0, 0, 0.444);
     margin-top: 70px;
  }
+
  .container1{
     display: flex;
     flex-wrap: wrap;
@@ -265,11 +253,7 @@ h3 {
     justify-content: center;
     padding-bottom: 50px;
  }
- .imagedroite img{
-    width: 50%;
-    display: flex;
-    
- }
+
 .groupe1{
 display: flex;
 
@@ -283,11 +267,7 @@ display: flex;
     justify-content: center;
 
 }
-.contenue3 .imagedroite{
-    width: 100%;
-    justify-content: center;
-    
-}
+
 @media screen and ( max-width: 530px ){
     .groupe1{
         display: flex;
@@ -300,7 +280,7 @@ display: flex;
 /********************  MES OUTILS **********************/
 
 .page4{
-    margin-top: 90px;
+    margin-top: 100px;
     width: 100vw;
     
 }
@@ -326,15 +306,21 @@ h3 {
  }
  .imagedroite img{
     width: 100%;
+    height: 50vw;
+
     justify-content: center;
   
  }
 .icone{
-    font-size: 100px;
+    font-size: 10vw;
     display: table;
     margin: 60px;
     overflow: hidden;
     vertical-align: middle;
+}
+.icone img{
+    width: 100%;
+    height: 10vw;
 }
 .groupe3{
 display: flex;
@@ -346,7 +332,7 @@ display: flex;
 
 /******************** PROJETS **********************/
 .page5{
-    margin-top: 90px;
+    margin-top: 100px;
     margin-bottom: 5%;
     width: 100%;
 }
@@ -358,23 +344,104 @@ display: flex;
     margin-top: 70px;
     width: 100%;
  }
- .container3{
-    display: flex;
+ /* Conteneur principal des cards */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Crée 4 colonnes égales par défaut */
+    gap: 20px; /* Espacement entre les cards */
+    margin: 20px;
+}
+
+/* Styles pour chaque card */
+.card {
     width: 100%;
-    justify-content: space-around;
- }
-.contenue5 img{
-    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 12px;  /* Arrondir les coins de la card */
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8); /* Noir/Gris foncé avec transparence */
+    color: white; /* Texte blanc */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Animation pour l'effet de survol */
 }
-.projet1{
-    width: 33,33%;
+
+/* Image au sommet de chaque card avec un flottement */
+.card-img-top {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transform: translateY(0); /* Position de départ de l'image */
+    transition: transform 0.3s ease; /* Animation pour le flottement */
 }
-.projet2{
-    width: 33,33%;
+
+/* Contenu principal de la card */
+.card-body {
+    padding: 15px;
+    text-align: center; /* Centrer le texte dans le body de la card */
 }
-.projet3{
-    width: 33,33%;
+
+/* Titre de la card */
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
 }
+
+/* Description de la card */
+.card-text {
+    font-size: 1rem;
+    color: white; /* Texte blanc */
+    margin-bottom: 15px;
+}
+
+/* Bouton d'action */
+.btn {
+    background-color: #6f42c1; /* Fond violet */
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 8px; /* Arrondi sur les coins du bouton */
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #5a31a1; /* Légèrement plus foncé au survol */
+}
+
+/* Effet au survol de la card */
+.card:hover {
+    transform: translateY(-10px);  /* Légère montée de la card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre plus marquée pour l'effet de survol */
+}
+
+/* Effet flottant sur l'image lorsque la card est survolée */
+.card:hover .card-img-top {
+    transform: translateY(-10px);  /* L'image flotte vers le haut */
+}
+
+/* Media Queries pour rendre la mise en page responsive */
+
+/* Pour les petits écrans (tablettes, smartphones en mode paysage) */
+@media (max-width: 1024px) {
+    .card-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 colonnes pour les écrans moyens */
+    }
+}
+
+/* Pour les très petits écrans (smartphones en mode portrait) */
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 colonnes pour les petits écrans */
+    }
+}
+
+/* Pour les très très petits écrans (smartphones très petits) */
+@media (max-width: 480px) {
+    .card-container {
+        grid-template-columns: 1fr; /* 1 colonne pour les écrans très petits */
+    }
+}
+
 
 
 /********************  FOOTER **********************/
@@ -423,7 +490,7 @@ div.footer{
         display: none;
     }
 .gauche{
-    width: 100%;
+    width: 50%;
     justify-content: center;
 }
     .container3{
@@ -458,10 +525,7 @@ div.logo{
     justify-content: center;
     width: 100%;
     }
-    .imagegauche{
-        justify-content: center;
-    width: 100%;
-    }
+   
    
     .container0{
         display: flex;
@@ -491,10 +555,7 @@ div.logo{
 justify-content: center;
 width: 100%;
 }
-.imagedroite{
-    justify-content: center;
-width: 100%;
-}
+
 /*img{
     height: 600px;
 }*/
@@ -520,10 +581,7 @@ width: 100%;
 justify-content: center;
 width: 100%;
 }
-.imagedroite{
-    justify-content: center;
-    width: 100%;
-}
+
 
 .liste1{
     display: block;
